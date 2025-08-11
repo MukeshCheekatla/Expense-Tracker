@@ -4,7 +4,8 @@
 @theme {
   --font-display: "Poppins", "sans-serif";
   --breakpoint-3xl: 1920px;
-  --color-primary: #875cf5;
+  /* Change primary color from violet to teal */
+  --color-primary: #14b8a6; /* Tailwind teal-500 */
 }
 
 @layer base {
@@ -13,35 +14,35 @@
   }
 
   body {
-    background-color: #fcfbfc;
+    background-color: #f0fdfa; /* light teal/greenish background - like tailwind's teal-50 */
     overflow-x: hidden;
   }
 }
 
 .recharts-bar-rectangle:hover {
-  fill: rgba(255, 255, 0, 0.2) !important; 
+  fill: rgba(20, 184, 166, 0.2) !important; /* teal-500 with transparency */
 }
 
 .input-box {
-  @apply w-full flex justify-between gap-3 text-sm text-black bg-slate-100 rounded px-4 py-3 mb-4 mt-3 border border-slate-200 outline-none;
+  @apply w-full flex justify-between gap-3 text-sm text-gray-900 bg-teal-50 rounded px-4 py-3 mb-4 mt-3 border border-teal-200 outline-none;
 }
 
 .btn-primary {
-  @apply w-full text-sm font-medium text-white bg-violet-500 shadow-lg shadow-purple-600/5 p-[10px] rounded-md my-1 hover:bg-purple-600/15 hover:text-purple-600;
+  @apply w-full text-sm font-medium text-white bg-teal-500 shadow-lg shadow-teal-600/30 p-[10px] rounded-md my-1 hover:bg-teal-600/90 hover:text-white;
 }
 
 .card {
-  @apply bg-white p-6 rounded-2xl shadow-md shadow-gray-100 border border-gray-200/50;
+  @apply bg-white p-6 rounded-2xl shadow-md shadow-teal-100 border border-teal-200/50;
 }
 
 .card-btn {
-  @apply flex items-center gap-3 text-[12px] font-medium text-gray-700 hover:text-purple-500 bg-gray-50 hover:bg-purple-50 px-4 py-1.5 rounded-lg border border-gray-200/50 cursor-pointer;
+  @apply flex items-center gap-3 text-[12px] font-medium text-gray-700 hover:text-teal-500 bg-teal-50 hover:bg-teal-100 px-4 py-1.5 rounded-lg border border-teal-200/50 cursor-pointer;
 }
 
 .add-btn {
-  @apply flex items-center gap-1.5 text-xs md:text-sm font-medium text-purple-600 whitespace-nowrap bg-purple-50 border border-purple-100 rounded-lg px-4 py-2 cursor-pointer;
+  @apply flex items-center gap-1.5 text-xs md:text-sm font-medium text-teal-600 whitespace-nowrap bg-teal-50 border border-teal-100 rounded-lg px-4 py-2 cursor-pointer;
 }
 
 .add-btn-fill {
-  @apply text-white bg-primary
+  @apply text-white bg-primary;
 }

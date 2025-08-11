@@ -8,6 +8,7 @@ import Home from "./pages/Dashboard/Home";
 import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
 import Budget from "./pages/Dashboard/Budget";
+import LandingPage from "./pages/Landingpage";
 //import AdminPanel from './components/AdminPanel/AdminPanel'; // Import AdminPanel
 
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
       <UserProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Root />} />
+            {/* <Route path="/" element={<Root />} /> */}
+            <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginForm />} />
             <Route path="/signUp" element={<SignUpForm />} />
             <Route path="/dashboard" element={<Home />} />
